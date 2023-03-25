@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(226, 170, 65);
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+article{
+    border:2px solid #6f71d1;
+    margin: 30px 20px;
+    padding: 3px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+article img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+p{
+    text-align: justify;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-top: 2px solid #1246b8;
+    
+}

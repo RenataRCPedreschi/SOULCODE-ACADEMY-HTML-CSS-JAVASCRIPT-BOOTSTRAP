@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de HTML e CSS</title>
+</head>
+<body>
+    <h3>Cadastro de Perfil</h3>
+    <form>
+        Nome: <label for=""></label>
+        <input required type="text" id="cNome" name="nome" placeholder="Digite seu Nome aqui" minlength="1" maxlength="100"><br>
+        
+        Senha:
+        <input required type="password" name="senha" placeholder="Digite sua senha aqui"><br>
+        
+        Email:
+        <input type="email" name="email" placeholder="Digite seu e-mail aqui"><br>
+        
+        Telefone:
+        <input type="tel" name="telefone" value="99 99999-9999"><br>
+        
+        URL do instagram:
+        <input type="url" name="instagram"><br>
+        
+        Idade:
+        <input type="number" name="idade"  min="0" max="130"><br>
+        
+        Data de Nascimento:
+        <input type="date" name="dataNasc" max="1900-01-01" max="2023-02-16"><br>
+        
+        Hora de Nascimento:
+        <input type="time" name="horaNasc"><br>
+        
+        Hora e data Nascimento:
+        <input type="datetime-local" disabled><br>
+        
+        Foto de perfil:
+        <input type="file" multiple accept=".jpeg, .png " name="avatar"><br>
+        
+        Interesses:
+        Humanas<input type="checkbox" name="interesss">
+        Exatas<input type="checkbox" name="interesss">
+        Linguagens<input type="checkbox" name="interesss">
+        Ciências<input type="checkbox" name="interesss">
+        <br>
+        
+        Escolha sua cor favorita:
+        <input type="color" name="cor"><br>
+        
+        Sexo:
+        <input type="radio" name="sexo"> Masculino
+        <input type="radio" name="sexo"> Feminino
+        <input type="radio" name="sexo"> Prefiro não responder 
+        <br>
+        
+        Nível de Inglês:
+        1 <input type="range" name="ingles" min="0" max="10" value="0"> 10 <br>
+        Id de aluno (para uso da empresa, veja no inspecionar)
+        <input type="hidden" value="789756215514"> <br>
+        
+        Conte um pouco sobre você: <br>
+        <textarea cols="40" rows="10" placeholder="Digite seu texto aqui" name="texto"></textarea><br>
+        
+        Escolaridade:
+        <select name="escolaridade">
+            <option disabled selected>Selecione uma Opção:</option>
+            <option>Ensino Fundamental</option>
+            <option>Ensino Médio</option>
+            <option>Ensino Superior</option>
+        </select><br>
+
+        <!-- <input type="submit" value="Enviar">  submeter -->
+        <button type="submit">Enviar</button>
+        <button type="button"> Não faz nada</button>
+        <button type="reset"> Reiniciar</button>
+    </form>
+    
+</body>
+</html>
+
+

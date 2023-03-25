@@ -1,0 +1,42 @@
+/* Prioridade CSS
+inline > interno > externo 
+último > primeiro
+i, b > p
+div img > img
+*/
+
+img{
+    width: 100px !important; /* largura */
+    height: 100px !important; /* altura */
+}
+
+
+h1{
+    color: blue;
+}
+
+
+
+i{
+    color: plum;
+}
+
+
+b{
+    color: red;
+}
+
+p{
+    color: #3335c955;
+}
+
+
+div img{
+    width: 200px;
+    height: 200px;
+}
+
+img{
+    width: 300px; /* largura */
+    height: 300px; /* altura */
+}

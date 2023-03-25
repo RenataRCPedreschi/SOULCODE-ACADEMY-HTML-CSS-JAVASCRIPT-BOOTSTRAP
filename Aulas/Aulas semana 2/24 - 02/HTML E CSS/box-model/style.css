@@ -1,0 +1,42 @@
+/*Box-Model -> Modelo de caixa
+Largura
+Altura
+Borda
+Espaçamento interno
+Margem
+*/
+
+header {
+  width: 100%; /* Define a largura da caixa*/
+  height: 200px; /* Define a altura da caixa*/
+  
+  
+  border: 2px solid red;  /* largura tipo cor*/
+  /* boder-style: solid, dashed, dotted*/
+  /* border-radius: 8px; */ /*Arredondamento das bordas*/
+ /*  border-left:  3px solid peru; */ /* Aplica borda apenas na esquerda */
+  
+  
+  /*Espaçamento interno (padding)*/
+
+/* padding: 30px; Aplica 30px de espaçamento em todos os sentidos */
+
+/* padding: 20px 30px 20px 30px; /*top, right, bottom, left*/
+
+/* Aplicar espaçamento em sentidos definidos */
+/* padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 30px;
+padding-right: 30px; */
+  
+/* Aplica 20px em cima e emabaixo e 30px nos lados */
+padding: 20px 30px;
+}
+
+header a{
+    margin: 20px ;
+    padding: 3px;
+
+ /*Aplicar margem especificando nos 4 sentidos */ 
+ /* margin: 10px 20 px 30 px 40 px */
+}

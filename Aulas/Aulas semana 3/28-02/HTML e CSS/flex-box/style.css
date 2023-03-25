@@ -1,0 +1,135 @@
+/* 
+Flex-box - caixa flexível
+*container
+*itens/content
+*direção
+
+*/
+
+
+/* 
+    Container
+    * display: flex;
+    * flex-direction
+    * justify-content
+    * align-items
+    * align-content
+    * gap
+    * flex-wrap
+    Items/Content
+    * flex-grow
+    * flex-shrink
+    * flex
+    * align-self
+    * order
+*/
+
+
+.border {
+  padding: 0;
+  border: 2px solid black;
+}
+
+.container {
+  width: 500px;
+  height: 300px;
+
+  /* Sao propriedades do container */
+  display: flex; /* container */ /* Ele habilita o flex-box */
+
+  /* Funciona somente quando o display flex está ativado */
+  /* Direção dos itens do container */
+  flex-direction: row; /* row -linha  column - coluna   row-reverse - inverte ordem itens  column-reverse - inverte ordem coluna*/
+
+  /* Alinha os conteúdos seguindo a direção definida */
+  justify-content: space-evenly; /* flex-start (inicio); flex-end(fim)  center(centro) space-between(entre os itens) space-around(espaço entre ele e laterais - mais nas laterais)  space-evenly(todos espaços iguais */
+
+  /* alinhamento dos itens seguindo a direção perpendicular da direção definida */
+  align-items: center; /* alinha em coluna, quando está em linha e vice versa  center; flex-end; flex-start; stretch(estica)*/
+}
+
+#triangulo{
+/* Auto alinhamento */
+  align-self: flex-start; /* flex-start, flex-end, cener, stretch */
+}
+#circulo{
+  align-self: flex-end;
+}
+
+.container-2 {
+  width: 500px; /* em %, divide a quantidade da altura */
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+
+  /* quebra linha/coluna dos conteúdos */
+  flex-wrap: wrap; /* now-wrap, wrap    não sai do limite do container*/
+
+  justify-content: center;
+  align-items: center;
+
+  /* Funciona somente com flex-wrap:wrap(agrupa os itens da linha*/
+  /* Alinhamento do conteúdo (linha/coluna) seguindo uma direção definida */
+  align-content: center; /* flex-start, flex-end, center, space-between, space-around, space evenly*/
+
+  /*(grade de separação entre os itens) row-gap: 20px; column-gap:20px */
+  gap: 20px;
+}
+
+.container-3 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.container-3 img {
+  /* Crescimento flexível - ocupa o espaço disponível no container */
+  flex-grow: 1;
+
+  /* Diminuir de forma flexível */
+  flex-shrink: 1;
+}
+
+header {
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid blue;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  border: 2px solid purple;
+
+  /* Como se tivesse aplicado o flex-grow e o shrink juntos  */
+  flex: 1;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-4 {
+  width: 50%;
+  display: flex;
+}
+
+.container-4 img {
+  flex: 1;
+}
+.container-4 #c {
+  flex: 2;
+}
+
+#c {
+  flex: 2;
+}
+
+#t {
+  /* Indica a posição a partir da posição original */
+  order: -1;
+}

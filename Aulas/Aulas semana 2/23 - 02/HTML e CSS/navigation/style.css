@@ -1,0 +1,34 @@
+/* 
+    SINTAXE
+    seletor { propriedade: valor; }
+*/
+
+/* SELETOR
+    tag -> Nome da TAG de um documento que queira aplicar um estilo
+    id -> Identificar de forma unica um elemento de um documento
+    class -> Indentificar um elemento de um conjunto em um documento
+*/
+
+h1{
+    color: #e471e4;
+}
+
+#p1{
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+#p2{
+    font-size: 15px;
+}
+.artigo{
+    width: 300px; /* largura */
+}
+
+.artigo img{
+    width: 100%;
+}
+.artigo small{
+    font-size: 15px;
+    font-family: Calibri, sans-serif;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<title>Academia de Vencedores</title>
+</head>
+<body>
+
+	<header>
+		<h1>Academia de Vencedores</h1>
+		<nav>
+			<li><a href="">Página Principal</a></li>
+            <li><a href="">Sobre nós</a></li>
+            <li><a href="">Contato</a></li>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2>Contato</h2>
+
+			<p>Entre em contato conosco através do formulário abaixo ou pelos meios de contato listados na tabela.</p>
+            <form>
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+        
+                    <label for="cNome">Nome:</label>
+                    <input required type="text" id="cNome" name="nome" placeholder="Digite seu nome aqui" minlength="1" maxlength="70" size="40"> <br>
+                    
+                    <label for="cSenha">Senha:</label>
+                    <input required type="password" id="cSenha" name="senha" placeholder="Digite seu senha aqui"> <br>
+                    
+                    <label for="cEmail">E-mail:</label>
+                    <input required type="email" id="cEmail" name="email" placeholder="Digite seu e-mail aqui" value="gabriel@mail.com"> <br>
+                    
+                    <label for="cTelefone">Telefone:</label>
+                    <input required type="tel" id="cTelefone" name="telefone" value="99 99999-9999"> <br>
+                    
+                    <label for="cInstagram">URL do Instagram:</label>
+                    <input type="url" id="cInstagram" name="instagram"> <br>
+                    
+                    <label for="cIdade">Idade:</label>
+                    <input type="number" min="0" max="130" id="cIdade" name="idade" value="21"> <br>
+                    <label for="cAvatar">Foto de Perfil:</label>
+                    <input type="file" id="cAvatar" name="avatar" accept=".jpeg,.png" multiple> <br>
+                    
+                    <label>Sexo:</label>
+                    <input id="cSexoMasc" type="radio" name="sexo">
+                    <label for="cSexoMasc">Masculino</label>
+                    <input id="cSexoFem" type="radio" name="sexo">
+                    <label for="cSexoFem">Feminino</label>
+                    <input id="cNaoResp" type="radio" name="sexo">
+                    <label for="cNaoResp">Prefiro não responder</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Outras Informações</legend>
+        
+                    
+                    
+                    <label for="cTexto">Conte um pouco sobre você:</label> <br>
+                    <textarea required rows="4" cols="40" placeholder="Digite um texto" id="cTexto" name="texto">
+                        Texto inicial
+                    </textarea> <br>
+                    
+                    <label for="cEscolaridade">Escolaridade:</label>
+                    <select name="escolaridade" required id="cEscolaridade">
+                        <option disabled selected>Selecione uma opção</option>
+                        <option>Ensino Fundamental Completo</option>
+                        <option>Ensino Medio Completo</option>
+                        <option>Ensino Seuperior Completo</option>
+                    </select>
+                </fieldset>
+                
+                <!-- <input type="submit" value="Enviar"> submeter -->
+                <button type="submit">Enviar</button>
+                <button type="button">Não Faz Nada</button>
+                <button type="reset">Reiniciar</button>
+
+		</section>
+
+		<section>
+			<h2>Informações de Contato</h2>
+
+			<table border="1">
+                <colgroup>
+                    <col style="width: 150px"> <!-- Coluna -->
+                    <col style="width: 150px">
+                    <col style="width: 80px">
+                    <col style="width: 100px">
+                </colgroup>
+                <tr>
+                    <th>Nome</th>
+                    <th>Aréa</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Gabriel B</td>
+                    <td>Full Stack</td>
+                    <td>21 anos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Almir</td>
+                    <td>Full Stack</td>
+                    <td>23 anos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Igor</td>
+                    <td>Eng. de Dados</td>
+                    <td>30 nos</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">Responsáveis vendas</td>
+                </tr>
+             </table>
+
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+git init
+Comando dá origem a um repositório novo, local ou remoto, ou reinicializa um repositório já existente;
+
+git clone
+Permite clonar um código para sua máquina (repositório local).
+
+**code <nome da pasta> - abre direto no VS Code obs: não pode estar dentro da pasta
+
+git status
+Verifica se alguma mudança foi feita no branch atual.
+
+git add -A
+Permite move os arquivos da state area para um repositório local.
+
+git commit -m “descrição alteração” 
+-m: permite adicionar a descrição
+
+git remote -v
+permite ver o nome do repositório a ser enviado
+
+git push
+Envia o arquivo para o repositório removo, GitHub por exemplo.
+
+git pull
+Traz o arquivo para o repositório local.
+
+git checkout <arquivo>
+Descarta mudanças em algum arquivo específico.
+
+git merge <arquivo>
+Une os arquivos, é ele quem une os branchs as commits.
+
+git log
+Permite a visualização do histórico de commits.
+
+git branch
+Listagem de branches.
+
+
+
+
+
+
+
+
